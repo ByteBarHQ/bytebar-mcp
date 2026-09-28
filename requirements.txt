@@ -1,0 +1,6 @@
+# ByteBar MCP Server dependencies
+# Pinned to the tested v2 SDK API (MCPServer). Do not downgrade below 2.0:
+# mcp 1.x uses the old FastMCP import path and will fail to start.
+mcp==2.2.0
+uvicorn==0.34.0
+starlette==0.45.3

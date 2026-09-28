@@ -1,0 +1,9 @@
+# Render Blueprint for the ByteBar MCP Server.
+# Deploy: Render Dashboard -> New -> Blueprint -> connect the repo containing this file.
+# Render injects $PORT automatically; the Dockerfile reads it via ${PORT:-8000}.
+services:
+  - type: web
+    name: bytebar-mcp
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
